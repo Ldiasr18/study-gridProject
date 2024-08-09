@@ -7,6 +7,16 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
+    <div>
+        <p>Enter the number of Columns and Rows you want to create, it must be a number between 0 and 100</br>
+        <p>(use the same number for columns and rows if want squares)</br></p>       
+        <label for="column">columns:</label>
+        <input type="number" id="columnNumber" min ="1" max="100" placeholder="1-100">
+        <label for="rows">Rows:</label>
+        <input type="number" id="rowNumber" min ="1" max="100" placeholder="1-100">
+        <button id="submitBtn">Create Grid</button>
+    </div>
+
         <div class="container" style="width: 960px; height: 960px; border: 10px solid green;"></div>
 </body>
 </html>
