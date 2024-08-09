@@ -7,15 +7,17 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <div>
+    <div style = "justify-content: center; align-items: center; display: flex; flex-direction: column;">
         <h2>This page is a study of DOM manipullation, hover the mouse over the grid to change the cell colors, somewhat like a sketchpad</h2>
-        <p>Enter the number of columns and rows you want to create, it must be a number between 0 and 100</br>
-        <p>(Use the same number for columns and rows if want squares)</br></p>       
-        <label for="column">columns:</label>
+        <p style = "margin: 0px;">Enter the number of columns and rows you want to create, it must be a number between 0 and 100</br>
+        <p style = "margin: 0px;">(Use the same number for columns and rows if want squares)</p>       
+        <div>
+        <label for="column">Columns:</label>
         <input type="number" id="columnNumber" min ="1" max="100" placeholder="1-100">
         <label for="rows">Rows:</label>
         <input type="number" id="rowNumber" min ="1" max="100" placeholder="1-100">
         <button id="submitBtn">Create Grid</button>
+        </div>
     </div>
 
         <div class="container" style="width: 960px; height: 960px; border: 10px solid green;"></div>
